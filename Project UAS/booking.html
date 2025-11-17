@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="booking-p">
+<header>
+    <nav class="navbar">
+        <div class="logo">YourLogo</div>
+
+        <ul class="nav-menu">
+            <li><a href="#">Home</a></li>
+
+            <li class="dropdown">
+                <a href="#">Tour ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Gunung</a></li>
+                    <li><a href="#">Pantai</a></li>
+                    <li><a href="#">Danau</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#">Destination ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Bali</a></li>
+                    <li><a href="#">Lombok</a></li>
+                    <li><a href="#">Raja Ampat</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#">Booking ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Form Booking</a></li>
+                    <li><a href="#">Cek Pesanan</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="kontak.html">Contact ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">WhatsApp</a></li>
+                    <li><a href="#">Email</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="user-icon">👤</div>
+    </nav>
+</header>
+<body>
+    <h2>BOOKING</h2>
+        <p>Silakan isi formulir di bawah ini untuk melakukan booking perjalanan Anda. Pastikan semua informasi yang Anda berikan sudah benar sebelum mengirimkan formulir.</p>
+    </div>
+    <form action="/submit-booking" method="post">
+        <label for="name">Nama Lengkap:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Alamat Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="number">Nomor Ponsel:</label><br>
+        <input type="text" id="number" name="number" required><br><br>
+
+        <label for="date">Tanggal Pemberangkatan:</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="time">Tempat Penjemputan:</label><br>
+        <input type="text" id="address" name="address" required><br><br>
+
+        <label for="guests">Banyak Orang:</label><br>
+        <input type="number" id="guests" name="guests" min="1" required><br><br>
+
+        <label for="paket">Paket:</label><br>
+         <select name="paket" required>
+                <option value="standar">Paket Standar</option>
+                <option value="hemat">Paket Hemat</option>
+                <option value="premium">Paket Premium</option>
+            </select>
+            <br><br>
+        <input type="submit" value="Submit Booking">
+    </form>
+</body>
+</html>
